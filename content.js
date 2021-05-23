@@ -9,8 +9,11 @@ for (var i = 0; i < scripts.length; i++) {
   if (scripts[i].type.toLowerCase() == "application/ld+json") {
     var text = htmlDecode(JSON.parse(scripts[i].textContent).articleBody);
     var para = document.createElement("p");
-    const regex = /\.(?![^\S\r\n])/g;
+    console.log(text);
+    const regex = /\.(?![^\S\r\n])((?!&rdquo;))/g;
+    const regex2 = /rdquo;(?![^\S\r\n])/g;
     text = text.replace(regex, ".<br><br>");
+    text = text.replace(regex2, "rdquo;<br><br>");
     para.innerHTML = text;
     div[0].innerHTML = "";
     div[0].appendChild(para);
