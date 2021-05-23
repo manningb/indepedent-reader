@@ -4,7 +4,7 @@
 
 <h1 align="center">Independent Reader</h1>
 
-_Independent Reader is a web browser extension to help bypass the premium paywall on indepdendent.ie._
+_Independent Reader is a web browser extension to show the full article body on premium indepdendent.ie articles._
 
 ### How it works
 
