@@ -6,6 +6,10 @@
 
 _Independent Reader is a web browser extension to help bypass the premium paywall on indepdendent.ie._
 
+### How it works
+
+This extensions runs in the background of your browser. When you access an independent.ie article, the script will find the article text, which is inside of a JSON object in a script tag of the page's code and render it to the browser. As the article text string does not contain new line characters, these are added where there is no space after a full stop. It will also remove the paywall code from the page. You don't need to press any buttons for it to run.
+
 ### Installation Instructions (From: [Bypass Paywalls repo](https://github.com/iamadamdev/bypass-paywalls-chrome))
 
 **Google Chrome / Microsoft Edge** (Custom sites supported)
